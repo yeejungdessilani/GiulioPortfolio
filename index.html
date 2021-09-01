@@ -10,24 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div id="menu">
-        <div class="sezioneMenu" id="sezioneCorrente">HOME</div>
-        <div class="sezioneMenu">DISCORD</div>
-        <div class="sezioneMenu">CHI SONO</div>
+        <div class="sezioneMenu" id="sezioneCorrente" onclick="openUrl('./index.html', '_self')">HOME</div>
+        <div class="sezioneMenu" onclick="openUrl('./pagine/discord.html', '_self')">DISCORD</div>
+        <div class="sezioneMenu" onclick="openUrl('./pagine/chisono.html', '_self')">CHI SONO</div>
     </div>
 
     <div id="containerSuperiore">
         <img src="img/Profilo.png" alt="GiulioAndCode" id="profiloHome">
         <div id="title">HOME</div>
-        <div id="seguimiSuHome">
-            <div>Seguimi su</div>
-            <div><img src="img/youtube icon.png" alt="Youtube icon">YOUTUBE</div>
-            <div><img src="img/discord icon.png" alt="Discord icon">DISCORD</div>
-
-        </div>
+    </div>
+    <div id="seguimiSuHome">
+        <div>Seguimi su</div>
+        <div onclick="openUrl('https:/\/www.youtube.com/channel/UCK6QwAdGWOWN9AT1_UQFGtA', '_blank')"><img
+                src="img/youtube icon.png" alt="Youtube icon">YOUTUBE</div>
+        <div onclick="openUrl('https:/\/discord.gg/bTF589dQd6', '_blank')"><img src="img/discord icon.png"
+                alt="Discord icon">DISCORD</div>
     </div>
 
     <div id="container">
@@ -37,66 +39,87 @@
             <div class="sezioneContenuto">
                 <div class="imgContenuto"><img src="img/discordBot.jpg" alt="Discord"></div>
                 <div class="titleContenuto">Discord Bot</div>
-                <div class="descriptionContenuto">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf
-                    gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn
-                    fj nfjgnf jgnfjg nfjng</div>
-                <div class="buttonContenuto"><img src="img/youtube icon.png" alt="Youtube icon">GUARDA ORA</div>
+                <div class="descriptionContenuto">Tutorial su come creare tantissimi comandi e funzioni per il vostro
+                    Bot Discord da aggiungere nel server con i vostri amici, e divertirvi tutti insieme</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=vHZDqH1rW4c&list=PLn5i4wacySbGucoY24AE-cmNUS2B2lnBo', '_blank')">
+                    <img src="img/youtube icon.png" alt="Youtube icon">GUARDA
+                    ORA
+                </div>
             </div>
             <div class="sezioneContenuto">
                 <div class="imgContenuto"><img src="img/intrattenimento.jpg" alt="Intrattenimento"></div>
                 <div class="titleContenuto">Intrattenimento</div>
-                <div class="descriptionContenuto">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf
-                    gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn
-                    fj nfjgnf jgnfjg nfjng</div>
-                <div class="buttonContenuto"><img src="img/youtube icon.png" alt="Youtube icon">GUARDA ORA</div>
+                <div class="descriptionContenuto">Video non solo sulla programmazione, anche più intrattenitivi come
+                    test, sfide e molto molto altro</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=MzjHXEWVbFQ&list=PLn5i4wacySbHDuZxyi06kzeUpbCPVLQvc', '_blank')">
+                    <img src="img/youtube icon.png" alt="Youtube icon">GUARDA
+                    ORA
+                </div>
             </div>
             <div class="sezioneContenuto">
                 <div class="imgContenuto"><img src="img/designSiti.jpg" alt="Design siti"> </div>
                 <div class="titleContenuto">Design siti web</div>
-                <div class="descriptionContenuto">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf
-                    gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn
-                    fj nfjgnf jgnfjg nfjng</div>
-                <div class="buttonContenuto"><img src="img/youtube icon.png" alt="Youtube icon">GUARDA ORA</div>
+                <div class="descriptionContenuto">Non sono un professionista ma mi piace dare sfogo alla fantasia
+                    creando e progettando il design di siti, magari rimodernizzandone alcuni famosi</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=DNi-oWcx5lM&list=PLn5i4wacySbH2RL-jC-N4Krj1STp4Haid', '_blank')">
+                    <img src="img/youtube icon.png" alt="Youtube icon">GUARDA
+                    ORA
+                </div>
             </div>
             <div class="sezioneContenuto">
                 <div class="imgContenuto"><img src="img/creareSiti.jpg" alt="Creare siti"></div>
                 <div class="titleContenuto">Creare siti web</div>
-                <div class="descriptionContenuto">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf
-                    gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn
-                    fj nfjgnf jgnfjg nfjng</div>
-                <div class="buttonContenuto"><img src="img/youtube icon.png" alt="Youtube icon">GUARDA ORA</div>
+                <div class="descriptionContenuto">Serie di video in cui insieme andiamo a creare siti web con l'utilizzo
+                    di HTML, Css e Javascript</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=vHZDqH1rW4c&list=PLn5i4wacySbGucoY24AE-cmNUS2B2lnBo', '_blank')">
+                    <img src="img/youtube icon.png" alt="Youtube icon">GUARDA
+                    ORA
+                </div>
             </div>
             <div class="sezioneContenuto">
                 <div class="imgContenuto"><img src="img/altriTutorial.jpg" alt="Altri tutorial"></div>
                 <div class="titleContenuto">Tutorial vari</div>
-                <div class="descriptionContenuto">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf
-                    gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn
-                    fj nfjgnf jgnfjg nfjng</div>
-                <div class="buttonContenuto"><img src="img/youtube icon.png" alt="Youtube icon">GUARDA ORA</div>
+                <div class="descriptionContenuto">Non solo tutorial incentrati sulla programmazione, ma anche di più
+                    particolari. Come utilizzare software, siti, programmmi e molto altro</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=WTTy-tZXm9A&list=PLn5i4wacySbFZixg9Ecs6Xb7ujmdmFNQZ', '_blank')">
+                    <img src="img/youtube icon.png" alt="Youtube icon">GUARDA
+                    ORA
+                </div>
             </div>
             <div class="sezioneContenuto">
                 <div class="imgContenuto"><img src="img/altro.jpg" alt="Altro"></div>
                 <div class="titleContenuto">Molto altro...</div>
-                <div class="descriptionContenuto">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf
-                    gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn
-                    fj nfjgnf jgnfjg nfjng</div>
-                <div class="buttonContenuto"><img src="img/youtube icon.png" alt="Youtube icon">GUARDA ORA</div>
+                <div class="descriptionContenuto">Tantissimi contenuti nuovi tutte le settimane, tra tutorial e
+                    intrattenimento ci divertiamo tutti assieme</div>
+                <div class="buttonContenuto"
+                    onclick="openUrl('https:/\/www.youtube.com/watch?v=9m5AaHNXpHY&list=PLn5i4wacySbEVPhaZRaSQ1DZO8t0Mikj5', '_blank')">
+                    <img src="img/youtube icon.png" alt="Youtube icon">GUARDA
+                    ORA
+                </div>
             </div>
         </div>
         <div class="titleContainer">Il mio server Discord</div>
         <div id="discord">
             <div id="discordTesti">
                 <div id="discordTitle">GiulioAndCommunity</div>
-                <div id="discordDescription">dshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf gsdfgsdkfjgnsldfkjgnlsdjkfn
-                    glsdkjfng lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn fj nfjgnf jgnfjg
-                    nfjngdshfbsdlhjfbksddfjhnb sdfsdfsdfsdfs dfg dfg sdf gsdfgsdkfjgnsldfkjgnlsdjkfn glsdkjfng
-                    lsdkfjngsljglskdfngjfng lkjfngfjng jnjfnjgn fjgnfj dfjgn fj nfjgnf jgnfjg nfjng</div>
+                <div id="discordDescription">Un server Discord in cui tutti noi possiamo parlare assieme, discutere di
+                    programmazione o di affari nostri, divertirci e molto altro. Molti canali e comandi gestiti dal mio
+                    bot realizzato personalmente che ci offre una esperienza nel server super gradevole, tutti i mesi
+                    nuove novità.<br>Venite ed entrate per divertirci tutti insieme</div>
                 <div id="discordButton">
-                    <div><img src="img/discord icon.png" alt="Youtube icon">ENTRA SUBITO</div>
-                    <div>ALTRE INFO</div>
+                    <div onclick="openUrl('https:/\/discord.gg/bTF589dQd6', '_blank')"><img src="img/discord icon.png"
+                            alt="Discord icon">ENTRA SUBITO</div>
+                    <div onclick="openUrl('./pagine/discord.html', '_self')">ALTRE INFO</div>
                 </div>
             </div>
-            <div id="discordImg"><img src="img/GiulioAndCommunity.jpg" alt="GiulioAndCommunity"></div>
+            <div id="discordImg">
+                <img src="img/GiulioAndCommunity.jpg" alt="GiulioAndCommunity">
+            </div>
         </div>
     </div>
 </body>
