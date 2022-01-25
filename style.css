@@ -7,7 +7,7 @@
     /*Color*/ 
     --primary:#62929E;
     --secondary:#546A7B;
-    --tertiary: #C6C5B9
+    --tertiary: #C6C5B9;
     --white: #ffffff;
     --black: #393D3F;
 
@@ -23,8 +23,32 @@
     --mini: 20px;
 }
 
+.bigText{
+    font-size: var(--big);
+}
+.mediumText{
+    font-size: var(--medium);
+}
+.tertiaryText{
+    color: var(--tertiary)
+}
+.underlineText{
+    text-decoration: underline;
+}
+.boldText{
+    font-weight: bold;
+}
+
 body{
-    background-color: var(--secondary);
+    background-color: var(--primary);
+    color: var(--white);
+
+    font-family: var(--roboto);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
 }
 #navbar{
     width:100%;
@@ -55,20 +79,26 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 10;
 }
 #menu div{
     font-family: var(--roboto);
-    color: #fff;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
-    font-size: var(--mini)
+    font-size: var(--mini);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#menu div:hover{
+    transform: scale(1.03);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.548);
 }
 #midNav{
     width: 50%;
     height: 100%;
-    background-color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,21 +106,20 @@ body{
 }
 #midNav > div{
     width: 60%;
-    height: 400px;
-    
+    height: fit-content;
     z-index: 20;
 }
 #title{
     width: fit-content;
     font-family: var(--bebas);
-    color: #fff;
+    color: var(--white);
     font-size: var(--mega);
     line-height: var(--mega);
 }
 #subtitle{
     width: fit-content;
     font-family: var(--roboto);
-    color: #fff;
+    color: var(--white);
     font-size: var(--small);
 }
 
@@ -101,7 +130,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 10;
+    z-index: 5;
+    background-color: var(--secondary);
 }
 #imgGiulio{
     width:700px;
@@ -115,16 +145,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 #arrowContainer img{
     width: 50px;
 }
 .contentContainer{
-    width: 95%;
+    width: 65%;
     height: fit-content;
-    height: 400px;
-    border-left: solid white 4px;
+    min-height: 400px; /*!Togliere*/
+    border-left: solid var(--white) 4px;
     position: relative;
+    margin:0 auto;
+    padding: var(--big) 0px 120px 25px;
 }
 .contentContainer::before{
     content: "";
@@ -132,9 +165,88 @@ body{
     width:30px;
     height: 30px;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--white);
     top: calc(-1 * 30px / 2);
-    left:calc(-1 * 30px / 2 - 2px);
+    left: calc(-1 * 30px / 2 - 2px);
+}
+.contentContainer::after{
+    content: attr(titolo);
+    color: var(--white);
+    font-size: var(--big);
+    font-family: var(--roboto);
+    font-weight: bold;
+    position: absolute;
+    top: calc(-1 * var(--big) / 2);
+    left: 25px;
+}
+.contentSubtitle{
+    margin-top:30px;
+}
+.socialColumn{
+    width: fit-content;
+    display: inline-block;
+    margin-right: 20px;
+}
+.socialButton{
+    width: fit-content;
+    height: fit-content;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.socialButtonImg{
+    width:50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.socialButtonImg img{
+    width:60%;
+}
+.lingue{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+.lingue img{
+    height: calc(var(--big) + 15px);
+    margin-right: 10px;
+}
+.lingue span{
+    margin-right: 10px;
+}
+
+.competenzeColumn{
+    display: inline-block;
+    margin-right: 20px;
+}
+.progress{
+   width:400px;
+   height: 10px;
+   background-color: var(--white);
+   border-radius: 5px;
+   position: relative;
+   overflow: hidden;
+   margin: 10px 0;
+}
+.progress::before{
+    content: "";
+    background-color: var(--primary);
+    position: absolute;
+    width: 70%;
+    height: 10px;
+    top:0;
+    left: 0;
 }
 
  /*Tablet*/
@@ -147,6 +259,9 @@ body{
         --small: 18px;
         --mini: 18px;
     }
+    .contentContainer{
+        width: 80%;
+    }
 }
 
 /*Phone*/
@@ -158,19 +273,54 @@ body{
        --medium: 20px;
        --small: 16px;
        --mini: 13px;
-  }
-  #menu {
-      display: none;
-  }
-  #midNav{
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary);
+    }
+    #menu {
+        display: none;
+    }
+    #midNav{
+        width: 100%;
+        height: 100%;
+        background-color: var(--primary);
     }
     #midNav2{
         width: 0%;
     }
     #imgGiulio{
         opacity: 0.5;
+    }
+    .contentContainer{
+        width: 90%;
+        padding-left: 0;
+        border:none;
+    }
+    .contentContainer::before{
+        display: none;
+    }
+    .contentContainer::after{
+        left: 0;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    #imgGiulio{
+        top:0;
+    }
+}
+@media only screen and (max-height: 700px) and (max-width: 450px){
+    #imgGiulio{
+        width: 500px;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
+    #imgGiulio{
+        width: 800px;
+        top: 200px;
+    }
+}
+@media only screen and (max-height: 500px) {
+    #imgGiulio{
+        top: 15px;
+        width: 400px;
     }
 }
