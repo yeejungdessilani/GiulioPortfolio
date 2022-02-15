@@ -239,14 +239,30 @@ a{
    overflow: hidden;
    margin: 10px 0;
 }
-.progress::before{
+
+@keyframes progressAnimation {
+    0%{
+        width: attr(perc);
+    }
+    30%{
+        width: 0;
+    }
+    100%{
+        width: attr(perc);
+    }
+  }
+
+.progress div{
     content: "";
     background-color: var(--primary);
     position: absolute;
-    width: 70%;
     height: 10px;
     top:0;
     left: 0;
+}
+.project{
+    width: 400px;
+    float: right;
 }
 
  /*Tablet*/
