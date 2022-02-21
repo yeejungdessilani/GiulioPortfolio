@@ -1,202 +1,310 @@
 <html>
-    <head>
-        <title>Giulio Paesani</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="style.css">
+<head>
+    <title>Giulio Paesani</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
-    <body>
-        <div id="navbar">
-            <div id="menu">
-                <div>Chi sono</div>
-                <div>Istruzione</div>
-                <div>Competenze</div>
-                <div>Progetti</div>
-            </div>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/style.css">
 
-            <div id="midNav">
-                <div>
-                    <p id="title">Giulio<br>Paesani</p>
-                    <p id="subtitle">Ciao sono Giulio, sono uno studente informatico, ho 17 anni, e questo sono io...</p>
-                </div>
-            </div>
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
 
-            <div id="midNav2">
-                <img src="./img/Giulio.webp" id="imgGiulio">
+    <meta name="description" content="Sito web personale di Giulio Paesani: Istruzione, competenze e progetti">
+    <meta name="keywords" content="giulio paesani, giulio paesani youtube, giulioandcode, giulio youtube, giulioandcommunity, giulioandcode discord, giulio paesani discord">
+    <meta name="author" content="Giulio Paesani">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Giulio Paesani">
+    <meta property="og:description" content="Sito web personale di Giulio Paesani: Istruzione, competenze e progetti">
+    <meta propertu="og:image" content="https://i.postimg.cc/CxqYjWVT/banner.jpg">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="menu">
+            <div><a href="#chiSono">Chi sono</a></div>
+            <div><a href="#istruzione">Istruzione</a></div>
+            <div><a href="#competenze">Competenze</a></div>
+            <div><a href="#progetti">Progetti</a></div>
+        </div>
+
+        <div id="midNav">
+            <div>
+                <p id="title">Giulio<br>Paesani</p>
+                <p id="subtitle">Ciao sono Giulio, sono uno studente informatico, ho 17 anni, e questo sono io...</p>
             </div>
         </div>
 
-        <div id="content">
-           <div id="arrowContainer">
-                <img src="./img/arrow.png">
+        <div id="midNav2">
+            <img src="./img/Giulio.webp" id="imgGiulio" alt="Giulio Paesani">
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="arrowContainer">
+            <img src="./img/arrow.svg">
+        </div>
+
+        <div class="contentContainer" id="chiSono" titolo="Io sono...">
+            <div class="bigText">
+                Ciao io sono Giulio, ho <span class="underlineText tertiaryText">17 anni</span> e sono un ragazzo
+                appassionato al mondo della programmazione.
+                Sono un tipo molto riservato, e <span class="underlineText tertiaryText">poco socievole</span>, a cui
+                non piace troppo uscire dalla propria confort zone. A volte però, ignorando ansie e paure, cerco di
+                abbattere queste insicurezze e sfruttare al massimo tutto il tempo che ho.
+                Frequento un <span class="underlineText tertiaryText">istituto tecnico informatico</span>, ma tutto ciò
+                che conosco lo ho imparato a casa nella mia cameretta.
+                Da qualche anno mi sono anche buttato in una nuova avventura nel mondo di YouTube dove parlo di
+                programmazione e informatica, ma mi diverto anche con tanto intrattenimento e cose un po' più personali.
+                Spero che un giorno tutto questo si trasformi in altro, oltre ad una grande passione.
+                Nel frattempo mi diverto, cerco di fare del mio meglio, pensando però sempre al mio futuro
             </div>
- 
-            <div class="contentContainer" titolo="Io sono...">
-                <div class="bigText">
-                    Ciao io sono Giulio, ho <span class="underlineText tertiaryText">17 anni</span> e sono un ragazzo appassionato al mondo della programmazione. 
-                    Sono un tipo molto riservato, e <span class="underlineText tertiaryText">poco socievole</span>, a cui non piace troppo uscire dalla propria confort zone. A volte però, ignorando ansie e paure, cerco di abbattere queste insicurezze e sfruttare al massimo tutto il tempo che ho.
-                    Frequento un <span class="underlineText tertiaryText">istituto tecnico informatico</span>, ma tutto ciò che conosco lo ho imparato a casa nella mia cameretta. 
-                    Da qualche anno mi sono anche buttato in una nuova avventura nel mondo di YouTube dove parlo di programmazione e informatica, ma mi diverto anche con tanto intrattenimento e cose un po' più personali. Spero che un giorno tutto questo si trasformi in altro, oltre ad una grande passione. 
-                    Nel frattempo mi diverto, cerco di fare del mio meglio, pensando però sempre al mio futuro
-                </div>
 
-                <div class="contentSubtitle mediumText">I miei social</div>
-                <div>
-                    <div class="socialColumn">
-                        <a href="">
-                            <div class="socialButton">
-                                <div class="socialButtonImg"><img src="./img/mail.png"></div>
-                                <div><span class="bigText boldText">giuliopaesani@gmail.com</span></div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="socialButton">
-                                <div class="socialButtonImg"><img src="./img/instagram.png"></div>
-                                <div><span class="bigText boldText">giulio_paesani</span></div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="socialButton">
-                                <div class="socialButtonImg"><img src="./img/discord.png"></div>
-                                <div><span class="bigText boldText">GiulioAndCode</span></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="socialColumn">
-                        <a href="">
-                            <div class="socialButton">
-                                <div class="socialButtonImg"><img src="./img/youtube.png"></div>
-                                <div><span class="bigText boldText">GiulioAndCode</span></div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="socialButton">
-                                <div class="socialButtonImg"><img src="./img/youtube.png"></div>
-                                <div><span class="bigText boldText">Giulio</span></div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="socialButton">
-                                <div class="socialButtonImg"><img src="./img/github.png"></div>
-                                <div><span class="bigText boldText">GiulioPaesani</span></div>
-                            </div>
-                        </a>
-                    </div>
+            <div class="contentSubtitle mediumText">I miei social</div>
+            <div>
+                <div class="socialColumn">
+                    <a href="mailto:giuliopaesani@gmail.com">
+                        <div class="socialButton">
+                            <div class="socialButtonImg"><img src="./img/mail.svg"></div>
+                            <div><span class="bigText boldText">giuliopaesani@gmail.com</span></div>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/giuliopaesani">
+                        <div class="socialButton">
+                            <div class="socialButtonImg"><img src="./img/instagram.svg"></div>
+                            <div><span class="bigText boldText">giulio_paesani</span></div>
+                        </div>
+                    </a>
+                    <a href="https://discord.gg/ypTCaveew2">
+                        <div class="socialButton">
+                            <div class="socialButtonImg"><img src="./img/discord.svg"></div>
+                            <div><span class="bigText boldText">GiulioAndCode#4272</span></div>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="contentContainer" titolo="Istruzione">
-                <div class="bigText">Istituto Tecnico Tecnologico - Indirizzo Informatico</div>
-                <div class="mediumText tertiaryText">ITTS Rimini O. Belluzzi L. Da Vinci</div>
-
-                <div class="contentSubtitle bigText boldText">Quarto anno in corso...</div>
-                <div class="bigText">Data di Diploma prevista: Giugno 2023</div>
-
-
-                <div class="contentSubtitle mediumText">Materie di indirizzo</div>
-                <div class="bigText">
-                    <span class="bigText boldText">- Informatica</span><br>
-                    Programmazione OOP, Linguaggio C#<br>
-                    <span class="bigText boldText">- SIR </span>(Sistemi e Reti)<br>
-                    Linguaggi HTML, Css, Javascript, Struttura e creazione di una rete<br>
-                    <span class="bigText boldText">- TPSIT </span>(Tecnologie e progettazione di sistemi informatici)<br>
-                    Linguaggio C, Progettazione e documentazione del software<br>
-                    <span class="bigText boldText">- Telecomunicazioni</span><br>
-                    Teoria, progettazione e realizzazione di semplici circuiti elettronici<br>
-                </div>
-                
-                <div class="contentSubtitle mediumText">Lingue</div>
-                <div class="lingue">
-                    <img src="./img/italiano.png">
-                    <span class="bigText boldText">Italiano</span><span class="bigText">- Madrelingua</span>
-                </div>
-                <div class="lingue">
-                    <img src="./img/inglese.png">
-                    <span class="bigText boldText">Inglese</span><span class="bigText">- Base/Intermedio (Livello A2)</span>
-                </div>
-                <div class="lingue">
-                    <img src="./img/francese.png">
-                    <span class="bigText boldText">Francese</span><span class="bigText">- Base</span>
-                </div>
-
-            </div>
-            <div class="contentContainer" titolo="Le mie competenze">
-                <div class="bigText">
-                    La scuola mi ha solamente dato, e mi sta dando, una piccola base delle mie competenze, per questo cerco di imparare giorno per giorno in camera mia nuove cose da autodidatta    
-                </div>
-
-                <div>
-                    <div class="competenzeColumn">
-                        <div class="contentSubtitle mediumText">Compentenze generali</div>
-                        <div>
-                            <div class="bigText">Utilizzo di posta elettronica</div>
-                            <div class="progress"><div style="width: 80%"></div></div>
+                <div class="socialColumn">
+                    <a href="https://www.youtube.com/giulioandcode">
+                        <div class="socialButton">
+                            <div class="socialButtonImg"><img src="./img/youtube.svg"></div>
+                            <div><span class="bigText boldText">GiulioAndCode</span></div>
                         </div>
-                        <div>
-                            <div class="bigText">Software Adobe</div>
-                            <div class="progress"><div style="width: 85%"></div></div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCvIafNR8ZvZyE5jVGVqgVfA">
+                        <div class="socialButton">
+                            <div class="socialButtonImg"><img src="./img/youtube.svg"></div>
+                            <div><span class="bigText boldText">Giulio</span></div>
                         </div>
-                        <div>
-                            <div class="bigText">Software Suite Office</div>
-                            <div class="progress"><div style="width: 90%"></div></div>
+                    </a>
+                    <a href="https://github.com/GiulioPaesani">
+                        <div class="socialButton">
+                            <div class="socialButtonImg"><img src="./img/github.svg"></div>
+                            <div><span class="bigText boldText">GiulioPaesani</span></div>
                         </div>
-                        <div>
-                            <div class="bigText">Editing video</div>
-                            <div class="progress"><div style="width: 80%"></div></div>
-                        </div>
-                        <div>
-                            <div class="bigText">Computer Hardware, Sistemi operativi</div>
-                            <div class="progress"><div style="width: 30%"></div></div>
-                        </div>
-                    </div>
-                    <div class="competenzeColumn">
-                        <div class="contentSubtitle mediumText">Compentenze di programmazione</div>
-                        <div>
-                            <div class="bigText">HTML</div>
-                            <div class="progress"><div style="width: 90%"></div></div>
-                        </div>
-                        <div>
-                            <div class="bigText">CSS</div>
-                            <div class="progress"><div style="width: 80%"></div></div>
-                        </div>
-                        <div>
-                            <div class="bigText">JavaScript/Node.js</div>
-                            <div class="progress"><div style="width: 70%"></div></div>
-                        </div>
-                        <div>
-                            <div class="bigText">C</div>
-                            <div class="progress"><div style="width: 20%"></div></div>
-                        </div>
-                        <div>
-                            <div class="bigText">C#</div>
-                            <div class="progress"><div style="width: 40%"></div></div>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="contentContainer"  titolo="I miei progetti">
-                <div class="contentSubtitle mediumText">Contenuti su YouTube</div>
-                <div class="project bigText">
+        </div>
+
+        <div class="contentContainer" id="istruzione" titolo="Istruzione">
+            <div class="bigText">Istituto Tecnico Tecnologico - Indirizzo Informatico</div>
+            <div class="mediumText tertiaryText">ITTS Rimini O. Belluzzi L. Da Vinci</div>
+
+            <div class="contentSubtitle bigText boldText">Quarto anno in corso...</div>
+            <div class="bigText">Data di Diploma prevista: Giugno 2023</div>
+
+
+            <div class="contentSubtitle mediumText">Materie di indirizzo</div>
+            <div class="bigText">
+                <span class="bigText boldText">- Informatica</span><br>
+                Programmazione OOP, Linguaggio C#<br>
+                <span class="bigText boldText">- SIR </span>(Sistemi e Reti)<br>
+                Linguaggi HTML, Css, Javascript, Struttura e creazione di una rete<br>
+                <span class="bigText boldText">- TPSIT </span>(Tecnologie e progettazione di sistemi informatici)<br>
+                Linguaggio C, Progettazione e documentazione del software<br>
+                <span class="bigText boldText">- Telecomunicazioni</span><br>
+                Teoria, progettazione e realizzazione di semplici circuiti elettronici<br>
+            </div>
+
+            <div class="contentSubtitle mediumText">Lingue</div>
+            <div class="lingue">
+                <img src="./img/italiano.webp">
+                <span class="bigText boldText">Italiano</span><span class="bigText">- Madrelingua</span>
+            </div>
+            <div class="lingue">
+                <img src="./img/inglese.webp">
+                <span class="bigText boldText">Inglese</span><span class="bigText">- Intermedio</span>
+            </div>
+            <div class="lingue">
+                <img src="./img/francese.webp">
+                <span class="bigText boldText">Francese</span><span class="bigText">- Base</span>
+            </div>
+
+        </div>
+
+        <div class="contentContainer" id="competenze" titolo="Le mie competenze">
+            <div class="bigText">
+                La scuola mi ha solamente dato, e mi sta dando, una piccola base delle mie competenze, per questo cerco
+                di imparare giorno per giorno in camera mia nuove cose da autodidatta
+            </div>
+
+            <div>
+                <div class="competenzeColumn">
+                    <div class="contentSubtitle mediumText">Compentenze generali</div>
+                    <div>
+                        <div class="bigText">Utilizzo di posta elettronica</div>
+                        <div class="progress">
+                            <div style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">Software Adobe</div>
+                        <div class="progress">
+                            <div style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">Software Suite Office</div>
+                        <div class="progress">
+                            <div style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">Editing video</div>
+                        <div class="progress">
+                            <div style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">Computer Hardware, Sistemi operativi</div>
+                        <div class="progress">
+                            <div style="width: 30%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="competenzeColumn">
+                    <div class="contentSubtitle mediumText">Compentenze di programmazione</div>
+                    <div>
+                        <div class="bigText">HTML</div>
+                        <div class="progress">
+                            <div style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">CSS</div>
+                        <div class="progress">
+                            <div style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">JavaScript/Node.js</div>
+                        <div class="progress">
+                            <div style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">C</div>
+                        <div class="progress">
+                            <div style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bigText">C#</div>
+                        <div class="progress">
+                            <div style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentContainer" id="progetti" titolo="I miei progetti">
+            <div class="contentSubtitle mediumText">Contenuti su YouTube</div>
+            <div class="project">
+                <div class="projectText bigText">
                     Qualche anno fa decisi un po' per noia, un po' per
-mettermi in gioco e un po' per realizzare un mio
-piccolo sogno, di iniziare a creare contenuti su
-YouTube. Realizzo tutt'ora video riguardanti i
-mondo della programmazione e
-dell'intrattenimento, cosa che amo fare.
-Con il tempo sono cresciuto, nel mio piccolo, e 
-migliorato molto. Cerco ogni giorno di maturare 
-sempre di più, sia dal lato dei contenuti che dal
-lato personale
-                        <!-- <div class="projectImg"></div> -->
-                        <img src="./img/GiulioAndCommunity.jpg" align="top">
+                    mettermi in gioco e un po' per realizzare un mio
+                    piccolo sogno, di iniziare a creare contenuti su
+                    YouTube. Realizzo tutt'ora video riguardanti i
+                    mondo della programmazione e
+                    dell'intrattenimento, cosa che amo fare.
+                    Con il tempo sono cresciuto, nel mio piccolo, e
+                    migliorato molto. Cerco ogni giorno di maturare
+                    sempre di più, sia dal lato dei contenuti che dal
+                    lato personale
+                </div>
+                <div class="projectImg" style="background-image: url('./img/YouTube.webp')" alt="Giulio Paesani youtube"></div>
             </div>
+            <a href="https://www.youtube.com/giulioandcode">
+                <div class="socialButton">
+                    <div class="socialButtonImg"><img src="./img/youtube.svg"></div>
+                    <div><span class="bigText boldText">GiulioAndCode</span></div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCvIafNR8ZvZyE5jVGVqgVfA">
+                <div class="socialButton">
+                    <div class="socialButtonImg"><img src="./img/youtube.svg"></div>
+                    <div><span class="bigText boldText">Giulio</span></div>
+                </div>
+            </a>
+
+            <div class="contentSubtitle mediumText">Server Discord + Bot personale</div>
+            <div class="project">
+                <div class="projectText bigText">
+                    Attraverso il mio canale YouTube ho creato una
+                    grande community, per questo più di un anno fa
+                    ho avuto la malsana idea di aprire un mio server
+                    Discord. Pensavo non fosse mai entrato nessuno,
+                    lo avevo realizzato così, giusto per, invece ancora
+                    oggi parlo, scrivo e mi diverto con tantissimi
+                    utenti che mi seguono e questa è una cosa che adoro. Ci aiutiamo a vicenda e io con loro ho imparato
+                    un sacco di cose.
+                    Inoltre attraverso le mie conoscenze di <span class="underlineText tertiaryText">Discord.js</span>, non troppo elevate ma sufficienti, ho realizzato
+                    un bot privato all'interno di questo server, con tantissimi comandi e funzioni esclusive, che
+                    migliora ancora di più la nostra esperienza all'interno del server
+                </div>
+                <div class="projectImg" style="background-image: url('./img/GiulioAndCommunity.webp')" lt="GiulioAndCommunity"></div>
+            </div>
+            <a href="https://discord.gg/ypTCaveew2">
+                <div class="socialButton">
+                    <div class="socialButtonImg"><img src="./img/discord.svg"></div>
+                    <div><span class="bigText boldText">GiulioAndCommunity</span></div>
+                </div>
+            </a>
+            <a href="https://github.com/GiulioPaesani/GiulioAndCommunityBOT">
+                <div class="socialButton">
+                    <div class="socialButtonImg"><img src="./img/github.svg"></div>
+                    <div><span class="bigText boldText">GiulioAndCommunity BOT</span></div>
+                </div>
+            </a>
+        </div>
+
+        <div id="footer">
+            <p class="bigText">Sito realizzato da <span class="boldText">Giulio Paesani</span></p>
+            <p class="mediumText">Credits</p>
+            <div id="credits">
+                <a href="https://www.flaticon.com">
+                    <div class="socialButton">
+                        <div class="socialButtonImg"><img src="./img/flaticon.webp"></div>
+                        <div><span class="bigText boldText">Icons</span><span class="bigText"> - https://www.flaticon.com</span></div>
+                    </div>
+                </a>
+                <a href="https://coolors.co">
+                    <div class="socialButton">
+                        <div class="socialButtonImg"><img src="./img/coolorsco.webp"></div>
+                        <div><span class="bigText boldText">Colors</span><span class="bigText"> - https://coolors.co</span></div>
+                    </div>
+                </a>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

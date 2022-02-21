@@ -44,8 +44,12 @@ body{
     color: var(--white);
 
     font-family: var(--roboto);
-}
 
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
     color: var(--white);
@@ -63,7 +67,6 @@ a{
     background-color: var(--black);
     width:100%;
     height: fit-content;
-    min-height: 1000px;
     position: relative;
     top: 85%;
     display: flex;
@@ -240,18 +243,6 @@ a{
    margin: 10px 0;
 }
 
-@keyframes progressAnimation {
-    0%{
-        width: attr(perc);
-    }
-    30%{
-        width: 0;
-    }
-    100%{
-        width: attr(perc);
-    }
-  }
-
 .progress div{
     content: "";
     background-color: var(--primary);
@@ -261,11 +252,48 @@ a{
     left: 0;
 }
 .project{
-    width: 400px;
-    float: right;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.projectText{
+    width:70%;
+    height: fit-content;
+    padding-right: 10px;
+}
+.projectImg{
+    width:30%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+}
+.projectImg img{
+    height: 100%;
 }
 
- /*Tablet*/
+#footer{
+    width:100vw;
+    height: 250px;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer p{
+    text-align: center;
+}
+
+/*Tablet*/
 @media only screen and (max-width: 1000px) {
     :root{
         /*Font size*/
@@ -278,11 +306,26 @@ a{
     .contentContainer{
         width: 80%;
     }
+    .progress{
+        width:300px;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .project{
+        flex-direction: column;
+    }
+    .projectText{
+        width: 100%;
+    }
+    .projectImg{
+        width: 100%;
+        margin-top:10px;
+    }
 }
 
 /*Phone*/
-@media only screen and (max-width: 450px) {
-  :root{
+@media only screen and (max-width: 475px) {
+    :root{
        /*Font size*/
        --mega: 70px;
        --big: 22px;
@@ -301,9 +344,6 @@ a{
     #midNav2{
         width: 0%;
     }
-    #imgGiulio{
-        opacity: 0.5;
-    }
     .contentContainer{
         width: 90%;
         padding-left: 0;
@@ -315,8 +355,51 @@ a{
     .contentContainer::after{
         left: 0;
     }
+    .projectImg{
+        height: 300px;
+    }
+    .progress{
+        width:200px;
+    }
+    #footer{
+        height: 100px;
+    }
+    #credits, #footer .mediumText{
+        display: none;
+    }
+    .socialColumn{
+        margin: 0;
+    }
 }
 
+@media only screen and (max-width: 340px) {
+    .socialButton div:nth-child(2){
+        width:70vw;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/*Mini phone*/
+@media only screen and (max-width: 300px) {
+    :root{
+       /*Font size*/
+       --mega: 70px;
+       --big: 18px;
+       --medium: 20px;
+       --small: 16px;
+       --mini: 13px;
+    }
+    .socialButtonImg{
+        width:40px;
+        height: 40px;
+    }
+    .lingue span:nth-of-type(2){
+        display: none;
+    }
+}
+
+/*img Giulio*/
 @media only screen and (max-height: 700px) {
     #imgGiulio{
         top:0;
@@ -326,12 +409,27 @@ a{
     #imgGiulio{
         width: 500px;
     }
+    #imgGiulio{
+        opacity: 0.5;
+    }
 }
 
 @media only screen and (min-height: 1200px) {
     #imgGiulio{
         width: 800px;
         top: 200px;
+    }
+}
+@media only screen and (min-height: 1600px) {
+    #imgGiulio{
+        width: 800px;
+        bottom: 0;
+        top:inherit;
+    }
+}
+@media only screen and (min-height: 2000px) {
+    #imgGiulio{
+        width: 1000px;
     }
 }
 @media only screen and (max-height: 500px) {
