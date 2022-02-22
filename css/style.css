@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    user-select:none;
 }
 
 :root{
@@ -29,11 +30,18 @@
 .mediumText{
     font-size: var(--medium);
 }
+.smallText{
+    font-size: var(--small);
+}
+.miniText{
+    font-size: calc(var(--mini) - 5px);
+}
 .tertiaryText{
     color: var(--tertiary)
 }
 .underlineText{
     text-decoration: underline;
+    cursor: pointer;
 }
 .boldText{
     font-weight: bold;
@@ -233,6 +241,13 @@ a{
     display: inline-block;
     margin-right: 20px;
 }
+.popup .competenzeColumn{
+    margin: 0 auto;
+}
+.popup .progress{
+    width:150px;
+    background-color: var(--black);  
+}
 .progress{
    width:400px;
    height: 10px;
@@ -294,6 +309,68 @@ a{
     margin: 0 20px;
 }
 
+span{
+    position:relative;
+}
+
+.popup{
+    position:absolute;
+    width:360px;
+    height: 160px;
+    background-color: var(--white);
+    bottom: calc(var(--big) + 10px);
+    border-radius: 5px;
+    box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease-in-out;
+    color:initial;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 20;
+}
+.popup > div{
+    width: 360px;
+    height: 160px;
+    position: relative;
+    left: calc(50% - 360px / 2);
+}
+span:hover .popup{
+    opacity: 1;
+    
+    pointer-events: initial;
+} 
+
+#countdown{
+    width: 100%;
+    height: 70px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.countdownDiv{
+    width:18%;
+    color:var(--white);
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 0;
+}
+.countdownNum{
+    font-size: calc(var(--big) + 5px);
+    font-family: var(--bebas);
+}
+@media only screen and (max-width: 470px){
+    .popup{
+        display: none;
+    }
+}
+@media only screen and (hover:none){
+    .popup{
+        display: none;
+    }
+}
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
     :root{
