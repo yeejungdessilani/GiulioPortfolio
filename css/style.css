@@ -54,10 +54,9 @@ body{
     font-family: var(--roboto);
 
     overflow-x: hidden;
-}
-html{
     scroll-behavior: smooth;
 }
+
 a{
     text-decoration: none;
     color: var(--white);
@@ -361,11 +360,7 @@ span:hover .popup{
     font-size: calc(var(--big) + 5px);
     font-family: var(--bebas);
 }
-@media only screen and (max-width: 470px){
-    .popup{
-        display: none;
-    }
-}
+
 @media only screen and (hover:none){
     .popup{
         display: none;
@@ -449,6 +444,9 @@ span:hover .popup{
     .socialColumn{
         margin: 0;
     }
+    .popup{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 340px) {
@@ -486,11 +484,11 @@ span:hover .popup{
     #imgGiulio{
         top:0;
     }
-}
-@media only screen and (max-height: 700px) and (max-width: 450px){
     #imgGiulio{
         width: 500px;
     }
+}
+@media only screen and (max-width: 450px){
     #imgGiulio{
         opacity: 0.5;
     }
